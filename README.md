@@ -16,9 +16,9 @@ Dockerfile is set up to run sensor.py script by default when the container start
 By overriding the Default CMD at Runtime:
 The simplest way for users to run a specific script is to override the default CMD specified in the Dockerfile at runtime by passing the desired command to docker run. For example, to run teleop.py, one can use:
 
-`docker run --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix yourdockerhubusername/my-python-sensor python teleop.py`
+`docker run --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix onkarpkher/my-python-sensor python teleop.py`
 
 And similarly, to explicitly run sensor.py:
 
-`docker run --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix yourdockerhubusername/my-python-sensor python sensor.py
+`docker run --rm -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix onkarpkher/my-python-sensor python sensor.py
 `

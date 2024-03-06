@@ -9,6 +9,7 @@ In the sensor.py script, I have tried to imitate a simple obstacle avoidance beh
 To pull and run the Docker image, execute:
 
 `docker pull onkarpkher/my-python-sensor:braitenberg`
+
 `docker run --rm onkarpkher/my-python-sensor:braitenberg`
 
 Dockerfile is set up to run sensor.py script by default when the container starts. Users pulling the docker image can use the following commands to run either script based on their preference:
